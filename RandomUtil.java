@@ -5,17 +5,10 @@ public class RandomUtil {
     }
     public static void getString(int n, boolean flag)
     {
-        /*if (n<0)
-        {
-            System.out.println("Negative integer");
-        }
-
-        else {
-         */
             if (flag == true) {
-                String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz~!@#$%^&*()_+";
+                final String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz~!@#$%^&*()_+";
                 String randomString = "";
-                int length = n;
+                int length = 6;
                 Random rand = new Random();
                 char[] text = new char[length];
                 for (int i = 0; i < length; i++) {
@@ -25,8 +18,9 @@ public class RandomUtil {
                     randomString += text[i];
                 }
                 System.out.println(randomString);
-            } else if (flag == false) {
-                String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz";
+            } 
+            else if (flag == false) {
+                final String characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvxyz";
                 String randomString = "";
                 int length = n;
                 Random rand = new Random();
